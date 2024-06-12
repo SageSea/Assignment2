@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- This declares our character type -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- This detects the viewport that the application is being viewed on -->
+    <meta name="description" content="This is my Assignment 1">
+    <!-- This describes the page index -->
+    <link rel="stylesheet" href="style.css">
+    <!-- This links the html code with css -->
+    <title>Pizza Order Form</title>
+</head>
+<body>
+<!-- Header -->
+<header>
+    <img src="./pizzaLogo.png" alt="Pizza logo">
+    <h1>Welcome to our pizza shop :)</h1>
+</header>
+<main>
+    <!-- Personal Information -->
+    <section>
+        <div>
+            <h2>Personal Information</h2>
+        </div>
+        <div>
+            <label for = "name">Name: </label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div>
+            <label for = "email">Email: </label>
+            <input type="text" name="email" id="email" required>
+        </div>
+    </section>
+    <!-- Pizza Details -->
+    <section>
+        <h2>Pizza Details</h2>
+        <div>
+            <label for="pizza-count">Number of pizzas: </label>
+            <input type="number" name="pizza-count" id="pizza-count" min="1" required>
+        </div>
+    </section>
+    <!-- Pizza size -->
+    <section>
+        <div>
+            <label for="pizza-size">Pizza size:</label>
+            <input type="text" name="pizza-size" id="pizza-size" required>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </div>
+    </section>
+    <!-- Toppings -->
+    <section>
+        <div>
+            <h3>Toppings</h3>
+            <div>
+                <label for="cheese">Cheese</label>
+                <input type="checkbox" id="cheese" name="toppings" value="cheese">
+                <img src="./cheese.jpg" alt="Cheese">
+            </div>
+            <div>
+                <label for="pepperoni">Pepperoni</label>
+                <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+                <img src="./pepperoni.jpg" alt="Pepperoni">
+            </div>
+            <div>
+                <label for="mushroom">Mushroom</label>
+                <input type="checkbox" id="mushroom" name="toppings" value="mushroom">
+                <img src="./mushroom.jpg" alt="Mushroom">
+            </div>
+        </div>
+    </section>
+    <section>
+        <button type="submit">Place Order</button>
+    </section>
+    <!-- Order Confirmation Section -->
+    <section class="order">
+        <h2>Order Confirmation</h2>
+        <div>
+            <p>Name: <span id="confirmation-name"></span></p>
+            <p>Email: <span id="confirmation-email"></span></p>
+            <p>Number of Pizzas: <span id="confirmation-count"></span></p>
+            <p>Pizza Size: <span id="confirmation-size"></span></p>
+            <p>Toppings: <span id="confirmation-toppings"></span></p>
+        </div>
+    </section>
+</main>
+<footer>
+    <img src="./deliveryTruck.png" alt="Delivery Truck">
+    <p>© 2024 Pizza Shop. All rights reserved.</p>
+</footer>
+</body>
+</html>
